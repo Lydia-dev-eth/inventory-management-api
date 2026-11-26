@@ -143,6 +143,8 @@ REST_FRAMEWORK = {
     ],
 }
 LOGIN_REDIRECT_URL = "/api/orders/"
+LOG_DIR = BASE_DIR / "logs"
+LOG_DIR.mkdir(exist_ok=True)
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
